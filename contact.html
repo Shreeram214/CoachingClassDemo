@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Enquiry | Apex Academy, Pune</title>
+  <meta name="description" content="Visit, call or send an enquiry to Apex Academy's admissions team in Pune.">
+  <meta name="theme-color" content="#2466A8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232466A8'/%3E%3Cpath d='M7 30 17 13.5l5.2 8.3 3.3-4.6L33 30Z' fill='%23E3CD9F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact" id="top">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero" style="--bg-img:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1800&q=70')">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Contact</span></nav>
+        <h1 class="reveal">Let's plan your <em>path to the top.</em></h1>
+        <p class="reveal" data-delay="1">Visit a centre, call our admissions desk, or send an enquiry — a counsellor will guide you to the right program.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact__grid">
+        <aside class="reveal">
+          <ul class="info-list">
+            <li><span class="info-list__icon"><svg class="icon"><use href="#i-pin"/></svg></span><div><h4>Main Campus</h4><p>3rd Floor, Apex House, 1204 FC Road,<br>Shivajinagar, Pune, Maharashtra 411004</p></div></li>
+            <li><span class="info-list__icon"><svg class="icon"><use href="#i-phone"/></svg></span><div><h4>Phone</h4><p><a href="tel:+919876543210">+91 98765 43210</a><br><a href="tel:+912025531234">+91 20 2553 1234</a></p></div></li>
+            <li><span class="info-list__icon"><svg class="icon"><use href="#i-mail"/></svg></span><div><h4>Email</h4><p><a href="mailto:admissions@apexacademy.example">admissions@apexacademy.example</a></p></div></li>
+            <li><span class="info-list__icon"><svg class="icon"><use href="#i-clock"/></svg></span><div><h4>Opening Hours</h4><p>Mon – Sat: 8:00 AM – 8:30 PM<br>Sunday: 9:00 AM – 1:00 PM (tests only)</p></div></li>
+          </ul>
+          <!-- Google Maps embed placeholder: replace q= with the real address -->
+          <div class="map">
+            <iframe title="Apex Academy location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=FC+Road,+Shivajinagar,+Pune&output=embed"></iframe>
+          </div>
+        </aside>
+
+        <div class="form-card reveal" data-delay="1" id="enquiry" data-form-anchor>
+          <h2>Course enquiry form</h2>
+          <p class="form-card__sub">Fields marked <span class="req">*</span> are required.</p>
+          <form id="enquiryForm" data-success="enquirySuccess" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="studentName">Student Name <span class="req">*</span></label>
+                <input type="text" id="studentName" autocomplete="name" placeholder="e.g. Riya Kulkarni" data-rule="name" data-label="the student's name">
+                <small class="field__error"></small>
+              </div>
+              <div class="field">
+                <label for="parentName">Parent Name <span class="req">*</span></label>
+                <input type="text" id="parentName" placeholder="e.g. Sunil Kulkarni" data-rule="name" data-label="a parent's name">
+                <small class="field__error"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phone" autocomplete="tel" inputmode="numeric" maxlength="14" placeholder="10-digit mobile number" data-rule="phone">
+                <small class="field__error"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" autocomplete="email" placeholder="you@example.com" data-rule="email">
+                <small class="field__error"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="course">Interested Course <span class="req">*</span></label>
+                <select id="course" data-courses data-rule="required" data-label="a course"><option value="">Select a course</option></select>
+                <small class="field__error"></small>
+              </div>
+              <div class="field">
+                <label for="currentClass">Current Class <span class="req">*</span></label>
+                <select id="currentClass" data-rule="required" data-label="the current class">
+                  <option value="">Select current class</option>
+                  <option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>
+                  <option>Class 11</option><option>Class 12</option><option>12th Passed / Repeater</option>
+                  <option>Graduate</option><option>Working Professional</option>
+                </select>
+                <small class="field__error"></small>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Message <span class="opt">(optional)</span></label>
+              <textarea id="message" rows="4" maxlength="500" placeholder="Tell us about your goals, preferred batch timing or any questions."></textarea>
+              <small class="field__hint"><span data-counter="message">0</span>/500</small>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block"><span class="btn__label">Submit Enquiry</span> <svg class="icon"><use href="#i-arrow-right"/></svg></button>
+            <p class="form-note">Demo form: details are validated in your browser only and are not sent or stored anywhere.</p>
+          </form>
+
+          <div class="form-success" id="enquirySuccess" hidden tabindex="-1">
+            <span class="form-success__icon"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h3>Thank you, <span data-success-name>student</span>!</h3>
+            <p>Your enquiry for <strong data-success-course>the course</strong> passed all checks.</p>
+            <p class="form-note">This is a front-end demo — no data was sent or saved. On the live site this would connect to the institute's admissions system.</p>
+            <button type="button" class="btn btn--ghost" data-reset>Submit another enquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Centres -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Our Centres</p>
+          <h2 class="section-title reveal">Three campuses across Pune.</h2>
+        </div>
+        <div class="centres">
+          <div class="centre reveal" data-delay="1"><svg class="icon"><use href="#i-building"/></svg><h3>Shivajinagar (Main)</h3><p>1204 FC Road, Shivajinagar, Pune 411004<br>JEE · NEET · UPSC · Foundation</p></div>
+          <div class="centre reveal" data-delay="2"><svg class="icon"><use href="#i-building"/></svg><h3>Kothrud</h3><p>Paud Road, near Vanaz Metro, Pune 411038<br>Foundation · Science · Commerce</p></div>
+          <div class="centre reveal" data-delay="3"><svg class="icon"><use href="#i-building"/></svg><h3>Baner</h3><p>Baner–Pashan Link Road, Pune 411045<br>JEE · NEET · SSC &amp; Banking</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Ready to join? <em>Apply in two minutes.</em></h2>
+            <p>Free application, free ASAT scholarship test and three demo classes included.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="admissions.html#apply" class="btn btn--accent btn--lg">Apply for Admission <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

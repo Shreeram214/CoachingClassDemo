@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results &amp; Achievements | Apex Academy, Pune</title>
+  <meta name="description" content="JEE, NEET, UPSC, MPSC, SSC, banking and board toppers from Apex Academy, Pune.">
+  <meta name="theme-color" content="#2466A8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232466A8'/%3E%3Cpath d='M7 30 17 13.5l5.2 8.3 3.3-4.6L33 30Z' fill='%23E3CD9F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="results" id="top">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero" style="--bg-img:url('https://images.unsplash.com/photo-1765572144519-1dc1e6e07bc9?auto=format&fit=crop&w=1800&q=70')">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Results</span></nav>
+        <h1 class="reveal">Our toppers speak <em>through their ranks.</em></h1>
+        <p class="reveal" data-delay="1">Verified results from the 2025 and 2026 exam cycles. Every achiever below studied in an Apex classroom or live batch.</p>
+      </div>
+    </section>
+
+    <!-- Hall of Fame -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <p class="kicker kicker--light reveal">Hall of Fame</p>
+          <h2 class="section-title reveal">The year's brightest ranks.</h2>
+        </div>
+        <div class="hof" id="hallOfFame"></div>
+        <div class="stat-band stat-band--dark mt-7 reveal">
+          <div><strong><span data-count="95">0</span>%</strong><span>Overall success rate</span></div>
+          <div><strong><span data-count="38">0</span></strong><span>AIRs under 1000 (2026)</span></div>
+          <div><strong>₹<span data-count="2">0</span> Cr+</strong><span>Scholarships awarded</span></div>
+          <div><strong><span data-count="3200">0</span>+</strong><span>Selections in 15 years</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All achievers with exam filter -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Achievers 2025–26</p>
+          <h2 class="section-title reveal">Results across every program.</h2>
+          <p class="section-sub reveal">Filter by exam to see toppers from each program.</p>
+        </div>
+        <div class="filters reveal" id="resultFilters" aria-label="Filter results by exam"></div>
+        <div class="results-grid" id="resultsGrid"></div>
+
+        <div class="scholar-strip reveal">
+          <div class="scholar-strip__title">
+            <svg class="icon"><use href="#i-medal"/></svg>
+            <div><h3>Scholarship achievements</h3><p>National-level recognition earned by our students</p></div>
+          </div>
+          <ul class="scholar-strip__list">
+            <li><strong>47</strong><span>KVPY / INSPIRE scholars</span></li>
+            <li><strong>63</strong><span>NTSE scholars</span></li>
+            <li><strong>120+</strong><span>Olympiad medals</span></li>
+            <li><strong>18</strong><span>Govt. merit scholarships</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">In Their Words</p>
+          <h2 class="section-title reveal">What our toppers say.</h2>
+        </div>
+        <div class="carousel reveal" id="testimonialCarousel" aria-roledescription="carousel" aria-label="Student testimonials">
+          <div class="carousel__viewport"><div class="carousel__track" id="carouselTrack"></div></div>
+          <div class="carousel__controls">
+            <button class="icon-btn" id="carouselPrev" aria-label="Previous testimonial"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+            <div class="carousel__dots" id="carouselDots"></div>
+            <button class="icon-btn" id="carouselNext" aria-label="Next testimonial"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Your name could be <em>on this page next year.</em></h2>
+            <p>Take the free ASAT scholarship test and start your journey with a batch built for results.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="admissions.html" class="btn btn--accent btn--lg">Apply for 2027–28 <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+            <button type="button" class="btn btn--outline-light btn--lg" data-enquire="Free Counselling Session">Talk to a Counsellor</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

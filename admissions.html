@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions 2027–28 &amp; ASAT Scholarship Test | Apex Academy, Pune</title>
+  <meta name="description" content="Apply to Apex Academy for 2027–28. Register free for ASAT and win up to 100% scholarship. JEE, NEET, UPSC, Foundation & more.">
+  <meta name="theme-color" content="#2466A8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232466A8'/%3E%3Cpath d='M7 30 17 13.5l5.2 8.3 3.3-4.6L33 30Z' fill='%23E3CD9F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admissions" id="top">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- ========== HERO + APPLICATION FORM (above the fold) ========== -->
+    <section class="admit-hero">
+      <div class="container admit-hero__grid">
+        <div>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Admissions</span></nav>
+          <span class="pill pill--brass reveal">Admissions Open · Academic Year 2027–28</span>
+          <h1 class="reveal" data-delay="1">Secure your seat. <em>Win up to 100% scholarship.</em></h1>
+          <p class="admit-hero__lead reveal" data-delay="2">Apply in two minutes. Every applicant gets a free ASAT scholarship test, a counselling session and three demo classes — no fee until you are sure.</p>
+          <ul class="admit-hero__points reveal" data-delay="2">
+            <li><svg class="icon"><use href="#i-check-circle"/></svg> No application fee · ASAT registration is free</li>
+            <li><svg class="icon"><use href="#i-check-circle"/></svg> Limited seats — batches capped at 25–40 students</li>
+            <li><svg class="icon"><use href="#i-check-circle"/></svg> Classroom, live online &amp; hybrid options</li>
+          </ul>
+          <div class="countdown reveal" data-delay="3" data-countdown aria-live="off">
+            <p class="countdown__label">Early-bird ASAT registration closes in</p>
+            <div class="countdown__boxes">
+              <div><strong data-cd="days">00</strong><span>Days</span></div>
+              <div><strong data-cd="hours">00</strong><span>Hours</span></div>
+              <div><strong data-cd="mins">00</strong><span>Mins</span></div>
+              <div><strong data-cd="secs">00</strong><span>Secs</span></div>
+            </div>
+          </div>
+          <div class="trust-row reveal" data-delay="4">
+            <div><strong>10,000+</strong><span>Students mentored</span></div>
+            <div><strong>95%</strong><span>Success rate</span></div>
+            <div><strong>4.9 ★</strong><span>Parent rating</span></div>
+          </div>
+        </div>
+
+        <!-- Two-step application form (frontend demo) -->
+        <div class="apply-card reveal" data-delay="2" id="apply" data-form-anchor>
+          <h2>Apply for Admission</h2>
+          <p class="apply-card__sub">Takes about 2 minutes. Fields marked <span class="req">*</span> are required.</p>
+          <ol class="stepper" aria-label="Application progress">
+            <li class="is-active">Student details</li>
+            <li>Program &amp; preferences</li>
+          </ol>
+          <form id="applyForm" data-success="applySuccess" novalidate>
+            <fieldset class="form-step">
+              <legend class="sr-only">Student details</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="aStudent">Student Name <span class="req">*</span></label>
+                  <input type="text" id="aStudent" autocomplete="name" placeholder="e.g. Riya Kulkarni" data-rule="name" data-label="the student's name">
+                  <small class="field__error"></small>
+                </div>
+                <div class="field">
+                  <label for="aParent">Parent Name <span class="req">*</span></label>
+                  <input type="text" id="aParent" placeholder="e.g. Sunil Kulkarni" data-rule="name" data-label="a parent's name">
+                  <small class="field__error"></small>
+                </div>
+              </div>
+              <div class="field">
+                <label for="aPhone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="aPhone" autocomplete="tel" inputmode="numeric" maxlength="14" placeholder="10-digit mobile number" data-rule="phone">
+                <small class="field__error"></small>
+              </div>
+              <div class="field">
+                <label for="aEmail">Email <span class="req">*</span></label>
+                <input type="email" id="aEmail" autocomplete="email" placeholder="you@example.com" data-rule="email">
+                <small class="field__error"></small>
+              </div>
+              <button type="button" class="btn btn--primary btn--lg btn--block" data-next>Continue <svg class="icon"><use href="#i-arrow-right"/></svg></button>
+            </fieldset>
+
+            <fieldset class="form-step" hidden>
+              <legend class="sr-only">Program and preferences</legend>
+              <div class="field">
+                <label for="aCourse">Program <span class="req">*</span></label>
+                <select id="aCourse" data-courses data-rule="required" data-label="a program"><option value="">Select a program</option></select>
+                <small class="field__error"></small>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="aClass">Current Class <span class="req">*</span></label>
+                  <select id="aClass" data-rule="required" data-label="the current class">
+                    <option value="">Select class</option>
+                    <option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>
+                    <option>Class 11</option><option>Class 12</option><option>12th Passed / Repeater</option>
+                    <option>Graduate</option><option>Working Professional</option>
+                  </select>
+                  <small class="field__error"></small>
+                </div>
+                <div class="field">
+                  <label for="aCentre">Preferred Centre <span class="req">*</span></label>
+                  <select id="aCentre" data-rule="required" data-label="a centre">
+                    <option value="">Select centre</option>
+                    <option>Shivajinagar (FC Road)</option><option>Kothrud</option><option>Baner</option><option>Live Online Classroom</option>
+                  </select>
+                  <small class="field__error"></small>
+                </div>
+              </div>
+              <label class="checkbox"><input type="checkbox" id="aAsat" checked> Also register me for the free ASAT 2027 scholarship test</label>
+              <div class="form-step__nav">
+                <button type="button" class="btn btn--ghost btn--lg" data-prev><svg class="icon"><use href="#i-chevron-left"/></svg> Back</button>
+                <button type="submit" class="btn btn--accent btn--lg"><span class="btn__label">Submit Application</span> <svg class="icon"><use href="#i-arrow-right"/></svg></button>
+              </div>
+            </fieldset>
+            <p class="form-note">Demo form: details are validated in your browser only and are not sent or stored anywhere.</p>
+          </form>
+
+          <div class="form-success" id="applySuccess" hidden tabindex="-1">
+            <span class="form-success__icon"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h3>Thank you, <span data-success-name>student</span>!</h3>
+            <p>Your application for <strong data-success-course>the program</strong> passed all checks.</p>
+            <p class="form-note">This is a front-end demo — no data was sent or saved. On the live site this would connect to the institute's admissions system.</p>
+            <button type="button" class="btn btn--ghost" data-reset>Start a new application</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BENEFITS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Why Apply Now</p>
+          <h2 class="section-title reveal">Everything you get when you apply.</h2>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit reveal" data-delay="1"><svg class="icon"><use href="#i-gift"/></svg><h3>Scholarship up to 100%</h3><p>Your ASAT score decides your tuition waiver — before you pay anything.</p></div>
+          <div class="benefit reveal" data-delay="2"><svg class="icon"><use href="#i-message"/></svg><h3>Free counselling</h3><p>A 30-minute session with a senior counsellor to choose the right program.</p></div>
+          <div class="benefit reveal" data-delay="3"><svg class="icon"><use href="#i-play"/></svg><h3>3 free demo classes</h3><p>Sit in on real classes with our faculty before confirming your seat.</p></div>
+          <div class="benefit reveal" data-delay="4"><svg class="icon"><use href="#i-shield"/></svg><h3>Early-bird benefit</h3><p>Register before 15 December for an additional 5% fee waiver.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SCHOLARSHIP TEST ========== -->
+    <section class="section section--tint" id="asat">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">ASAT 2027 · Scholarship Test</p>
+          <h2 class="section-title reveal">Your score, your scholarship.</h2>
+          <p class="section-sub reveal">A 90-minute aptitude &amp; subject test for Class 7–12 and graduates. Held every Sunday in December &amp; January — offline at all centres and online from home. Results within 72 hours.</p>
+        </div>
+        <div class="slabs">
+          <div class="slab slab--top reveal" data-delay="1"><strong>100%</strong><small>Scholarship</small><span>ASAT score 90% +</span></div>
+          <div class="slab reveal" data-delay="2"><strong>75%</strong><small>Scholarship</small><span>ASAT score 80–89%</span></div>
+          <div class="slab reveal" data-delay="3"><strong>50%</strong><small>Scholarship</small><span>ASAT score 70–79%</span></div>
+          <div class="slab reveal" data-delay="4"><strong>25%</strong><small>Scholarship</small><span>ASAT score 60–69%</span></div>
+        </div>
+        <p class="slabs-note reveal">Additional 10% for siblings and wards of defence personnel. <button type="button" class="link-arrow link-arrow--btn" data-enquire="Scholarship Test (ASAT 2027)" data-target="apply">Register for ASAT</button></p>
+      </div>
+    </section>
+
+    <!-- ========== UPCOMING BATCHES ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Upcoming Batches</p>
+          <h2 class="section-title reveal">Choose your batch — seats are limited.</h2>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="batch-table">
+            <thead><tr><th scope="col">Program</th><th scope="col">Starts</th><th scope="col">Timing</th><th scope="col">Mode</th><th scope="col">Seats</th><th scope="col"><span class="sr-only">Action</span></th></tr></thead>
+            <tbody id="batchTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Admission Process</p>
+          <h2 class="section-title reveal">From application to first class in 4 steps.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal" data-delay="1"><span>01</span><h4>Apply online</h4><p>Fill the two-step form above or visit any centre. No application fee.</p></li>
+          <li class="reveal" data-delay="2"><span>02</span><h4>Take ASAT or a diagnostic</h4><p>Free test to assess fundamentals and fix your scholarship slab.</p></li>
+          <li class="reveal" data-delay="3"><span>03</span><h4>Counselling &amp; demo</h4><p>Meet a counsellor and attend up to three demo classes.</p></li>
+          <li class="reveal" data-delay="4"><span>04</span><h4>Confirm your seat</h4><p>Submit documents, choose a batch and collect your study kit.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== ELIGIBILITY · DOCUMENTS · DATES ========== -->
+    <section class="section">
+      <div class="container info-cols">
+        <div class="info-box reveal" data-delay="1">
+          <h3><svg class="icon"><use href="#i-user-check"/></svg> Eligibility</h3>
+          <ul class="tick-list">
+            <li><svg class="icon"><use href="#i-check"/></svg>Foundation: currently in Class 7, 8 or 9</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>JEE / NEET: Class 10 passed or in Class 11–12</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Repeater batches: Class 12 passed (PCM / PCB)</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>UPSC / SSC / Banking: graduates or final-year students</li>
+          </ul>
+        </div>
+        <div class="info-box reveal" data-delay="2">
+          <h3><svg class="icon"><use href="#i-file"/></svg> Documents</h3>
+          <ul class="tick-list">
+            <li><svg class="icon"><use href="#i-check"/></svg>Latest school / college mark sheet</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Aadhaar card of student (copy)</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Two passport-size photographs</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>ASAT scorecard (for scholarship)</li>
+          </ul>
+        </div>
+        <div class="info-box reveal" data-delay="3">
+          <h3><svg class="icon"><use href="#i-calendar"/></svg> Important Dates</h3>
+          <ul class="deadline-list">
+            <li><span class="deadline-list__date"><b>15</b>Dec</span><div><h4>Early-bird ASAT closes</h4><p>Extra 5% fee waiver</p></div></li>
+            <li><span class="deadline-list__date"><b>21</b>Dec</span><div><h4>ASAT Phase 1</h4><p>Offline &amp; online</p></div></li>
+            <li><span class="deadline-list__date"><b>10</b>Jan</span><div><h4>Final registration</h4><p>2027–28 batches</p></div></li>
+            <li><span class="deadline-list__date"><b>05</b>Apr</span><div><h4>Batches begin</h4><p>JEE, NEET &amp; Foundation</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOCIAL PROOF ========== -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div><p class="kicker reveal">Join Our Toppers</p><h2 class="section-title reveal">Last year's achievers started here.</h2></div>
+          <a href="results.html" class="link-arrow reveal">View all results <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <div class="results-grid" id="resultsGrid" data-limit="4"></div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="kicker reveal">Admission FAQ</p>
+          <h2 class="section-title reveal">Questions parents &amp; students ask us.</h2>
+          <p class="reveal">Can't find your answer? Our counsellors are available Monday to Saturday, 9 AM – 8 PM.</p>
+          <div class="faq__contact reveal">
+            <a href="tel:+919876543210" class="btn btn--primary"><svg class="icon"><use href="#i-phone"/></svg> Call Admissions</a>
+            <a href="contact.html#enquiry" class="btn btn--ghost">Send a Question</a>
+          </div>
+        </div>
+        <div class="accordion" id="faqAccordion"></div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Seats are filling fast for <em>April 2027.</em></h2>
+            <p>Apply today — it's free, takes two minutes, and includes your ASAT scholarship test.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="#apply" class="btn btn--accent btn--lg">Apply Now <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+            <a href="tel:+919876543210" class="btn btn--outline-light btn--lg">Call +91 98765 43210</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky apply bar (mobile & tablet) -->
+  <div class="mobile-cta">
+    <a href="tel:+919876543210" class="btn btn--ghost"><svg class="icon"><use href="#i-phone"/></svg> Call</a>
+    <a href="#apply" class="btn btn--accent">Apply Now</a>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
