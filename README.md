@@ -2,6 +2,8 @@
 
 A premium, responsive multi-page website for a coaching institute (JEE, NEET, UPSC/MPSC, SSC & Banking, Foundation, Science and Commerce).
 
+**Live site:** https://coachingclassdemo.pages.dev
+
 Built with **HTML5, CSS3 and vanilla JavaScript** only — no frameworks, no build step, no backend.
 
 ## Pages
@@ -15,6 +17,9 @@ Built with **HTML5, CSS3 and vanilla JavaScript** only — no frameworks, no bui
 
 ## Editing content
 All courses, faculty, results, testimonials, FAQs, batches and the scholarship deadline live in data arrays at the top of `script.js`. Colours and spacing are CSS variables at the top of `style.css`.
+
+## Deployment
+Hosted on Cloudflare Pages, connected to this repository. Every push to `main` deploys automatically; other branches get preview URLs.
 
 ## Run locally
 Open `index.html` in a browser, or serve the folder with any static server.
