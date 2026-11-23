@@ -1,0 +1,7 @@
+# Cloudflare CLI local cache (contains account ID)
+.cloudflare/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
